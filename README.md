@@ -17,10 +17,10 @@ To install Lazydocker on Linux/WSL, use the official installation script:
 curl [https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh](https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh) | bash
 ```
 
-(Note: For macOS users, you can use:
+Note: For macOS users, you can use:
 ```bash
 brew install jesseduffield/lazydocker/lazydocker
-```)
+```
 ## 4. Running the Example
 Follow these steps to launch the demo environment and monitor it with Lazydocker:  
 1. Clone this repository and navigate to the folder.
