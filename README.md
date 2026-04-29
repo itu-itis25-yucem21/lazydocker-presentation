@@ -1,33 +1,41 @@
 # Lazydocker Presentation - YZV 322E
+
 ## 1. What is this tool?
-Lazydocker is an open-source terminal UI (TUI) for managing Docker and Docker Compose environments, written in Go. It provides a single-pane dashboard to monitor container logs, view stats, and manage images or volumes without memorizing complex CLI flags.
+[cite_start]Lazydocker is an open-source terminal UI (TUI) for managing Docker and Docker Compose environments, written in Go[cite: 54]. [cite_start]It provides a single-pane dashboard to monitor container logs, view real-time performance stats, and manage images or volumes without memorizing complex CLI flags[cite: 54].
 
 ## 2. Prerequisites
-To run this project and the tool, ensure you have the following installed:  
-* **Operating System:** Linux, macOS, or Windows (WSL2 recommended).
-* **Docker:** v20.10.0 or higher.  
-* **Docker Compose:** v2.0.0 or higher.  
-* **Lazydocker:** See the installation section below.
+[cite_start]To run this project and the tool, ensure you have the following installed:
+
+* [cite_start]**Operating System:** Linux, macOS, or Windows (WSL2 recommended).
+* [cite_start]**Docker:** v20.10.0 or higher.
+* [cite_start]**Docker Compose:** v2.0.0 or higher.
+* [cite_start]**Lazydocker:** See the installation section below.
 
 ## 3. Installation
-You can install Lazydocker using one of the following copy-pasteable commands depending on your setup:
+[cite_start]You can install Lazydocker using one of the following copy-pasteable commands depending on your setup[cite: 23, 24]:
+
 * **macOS (Homebrew):**
-  brew install jesseduffield/lazydocker/lazydocker
+```bash
+brew install jesseduffield/lazydocker/lazydocker
 * **Linux/Ubuntu (Curl):**
-  curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+```bash
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 * **Run as a Docker Container (No installation required):**
-  docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/jesseduffield/lazydocker:/.config/jesseduffield/lazydocker jesseduffield/lazydocker
+```bash
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/jesseduffield/lazydocker:/.config/jesseduffield/lazydocker jesseduffield/lazydocker
 
 ## 4. Running the Example
-Follow these steps to launch the demo environment and monitor it with Lazydocker:  
+[cite_start]Follow these steps to launch the demo environment and monitor it with Lazydocker:  
 1. Clone this repository and navigate to the folder.
 2. Start the sample containers in detached mode:
-   docker-compose up -d
+```bash
+docker-compose up -d
 3. Launch the Lazydocker interface:
-   lazydocker
+```bash
+lazydocker
 
 ## 5. Expected Output
-Once executed, you should see an interactive terminal interface with the following sections:
+[cite_start]Once executed, you should see an interactive terminal interface with the following sections:
 * **Containers:** List of running services (web-server, redis-cache, log-generator).
 * **Logs:** Real-time log stream of the selected container.
 * **Stats:** CPU and Memory usage graphs.
