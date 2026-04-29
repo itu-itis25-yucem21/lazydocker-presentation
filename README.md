@@ -1,7 +1,7 @@
 # Lazydocker Presentation - YZV 322E
 
 ## 1. What is this tool?
-Lazydocker is an open-source terminal UI (TUI) for managing Docker and Docker Compose environments, written in Go.It provides a single-pane dashboard to monitor container logs, view real-time performance stats, and manage images or volumes without memorizing complex CLI flags.
+Lazydocker is an open-source terminal UI (TUI) for managing Docker and Docker Compose environments, written in Go. It provides a single-pane dashboard to monitor container logs, view real-time performance stats, and manage images or volumes without memorizing complex CLI flags.
 
 ## 2. Prerequisites
 To run this project and the tool, ensure you have the following installed:
@@ -32,7 +32,7 @@ docker-compose up -d
 ```bash
 lazydocker
 ```
-(Note: If the command is not found, you can run it via ~/.local/bin/lazydocker)
+(Note: If the command is not found, you can run it via `bash ~/.local/bin/lazydocker`)
 ## 5. Expected Output
 Once executed, you should see an interactive terminal interface with the following sections:
 * **Containers:** List of running services (`yzv322e-log-generator`, `yzv322e-redis-cache`, `yzv322e-web-server`).
