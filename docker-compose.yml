@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # To view the CPU/RAM graph in Lazydocker, use a simple web server.
   yzv322e-web-server:
     image: nginx:alpine
     container_name: yzv322e-web-server
@@ -9,14 +8,12 @@ services:
       - "8080:80"
     restart: always
 
-  # A service that represents the database layer.s
   yzv322e-redis-cache:
     image: redis:alpine
     container_name: yzv322e-redis-cache
     restart: always
 
-  # A log generator to display the live log stream in Lazydocker.
   yzv322e-log-generator:
     image: alpine
     container_name: yzv322e-log-generator
-    command: /bin/sh -c "while true; do echo \"[INFO] Data Engineering Pipeline Heartbeat: $$(date)\"; sleep 2; done"
+    command: ["/bin/sh", "-c", "while true; do echo \"[INFO] Heartbeat: $$(date)\"; sleep 2; done"]
