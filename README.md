@@ -14,7 +14,7 @@ To run this project and the tool, ensure you have the following installed:
 ## 3. Installation
 To install Lazydocker on Linux/WSL, use the official installation script:
 ```bash
-curl [https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh](https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh) | bash
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 ```
 
 Note: For macOS users, you can use:
@@ -32,7 +32,7 @@ docker-compose up -d
 ```bash
 lazydocker
 ```
-(Note: If the command is not found, you can run it via ```bash ~/.local/bin/lazydocker ```)
+(Note: If the command is not found, you can run it via ~/.local/bin/lazydocker)
 ## 5. Expected Output
 Once executed, you should see an interactive terminal interface with the following sections:
 * **Containers:** List of running services (`yzv322e-log-generator`, `yzv322e-redis-cache`, `yzv322e-web-server`).
