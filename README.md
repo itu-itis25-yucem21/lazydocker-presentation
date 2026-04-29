@@ -21,25 +21,67 @@ Note: For macOS users, you can use:
 ```bash
 brew install jesseduffield/lazydocker/lazydocker
 ```
+## Repository Structure
+```bash
+.
+├── README.md
+├── docker-compose.yml
+└── screenshot.png
+```
+
+The `docker-compose.yml` file defines the demo Docker environment used in this project.
 ## 4. Running the Example
-Follow these steps to launch the demo environment and monitor it with Lazydocker:  
-1. Clone this repository and navigate to the folder.
+Follow these steps to launch the demo environment and monitor it with Lazydocker:
+
+1. Clone this repository and navigate to the folder:
+```bash
+git clone https://github.com/itu-itis25-yucem21/lazydocker-presentation.git
+cd lazydocker-presentation
+```
+
 2. Start the sample containers in detached mode:
 ```bash
-docker-compose up -d
-``` 
+docker compose up -d
+```
+
+This project starts three demo services:
+- nginx web server
+- redis cache
+- log generator container
+
 3. Launch the Lazydocker interface:
 ```bash
 lazydocker
 ```
-(Note: If the command is not found, you can run it via `~/.local/bin/lazydocker`)
+
+If the command is not found, run:
+```bash
+~/.local/bin/lazydocker
+```
 ## 5. Expected Output
 Once executed, you should see an interactive terminal interface with the following sections:
-* **Containers:** List of running services (`yzv322e-log-generator`, `yzv322e-redis-cache`, `yzv322e-web-server`).
-* **Logs:** Real-time log stream of the selected container.
-* **Stats:** CPU and Memory usage graphs.
-> **Note:** Please refer to the `screenshot.png` file in this repository for the visual output.
 
+* **Containers:** List of running services (`yzv322e-log-generator`, `yzv322e-redis-cache`, `yzv322e-web-server`)
+* **Logs:** Real-time log stream of the selected container
+* **Stats:** CPU and Memory usage graphs
+* **Metadata:** Container status, ports, and details
+
+Expected interface layout:
+- Left panel: containers
+- Bottom panel: logs
+- Right panel: resource usage and metadata
+
+![Lazydocker Screenshot](screenshot.png)
 ## 6. AI Usage Disclosure
-This project utilized Gemini 3 Flash (AI) for planning the presentation structure, drafting the README documentation according to the course criteria, and designing the sample docker-compose.yml scenario. All AI-generated suggestions were reviewed and verified for technical accuracy.
+AI tools used:
+- Gemini 3 Flash: README drafting, project structure brainstorming, and docker-compose scenario suggestions.
+
+All generated outputs were manually reviewed, tested, and edited by the student.
+
+## Troubleshooting
+If Lazydocker is not found in PATH:
+
+```bash
+~/.local/bin/lazydocker
+```
       
