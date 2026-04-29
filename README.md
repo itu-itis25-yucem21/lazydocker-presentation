@@ -1,7 +1,7 @@
 # Lazydocker Presentation - YZV 322E
 
 ## 1. What is this tool?
-Lazydocker is an open-source terminal UI (TUI) for managing Docker and Docker Compose environments, written in Go[cite: 54]. [cite_start]It provides a single-pane dashboard to monitor container logs, view real-time performance stats, and manage images or volumes without memorizing complex CLI flags[cite: 54].
+Lazydocker is an open-source terminal UI (TUI) for managing Docker and Docker Compose environments, written in Go.It provides a single-pane dashboard to monitor container logs, view real-time performance stats, and manage images or volumes without memorizing complex CLI flags.
 
 ## 2. Prerequisites
 To run this project and the tool, ensure you have the following installed:
@@ -12,7 +12,7 @@ To run this project and the tool, ensure you have the following installed:
 * **Lazydocker:** See the installation section below.
 
 ## 3. Installation
-[cite_start]You can install Lazydocker using one of the following copy-pasteable commands depending on your setup[cite: 23, 24]:
+You can install Lazydocker using one of the following copy-pasteable commands depending on your setup:
 
 * **macOS (Homebrew):**
 ```bash
@@ -24,7 +24,7 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 ```
 * **Run as a Docker Container (No installation required):**
 ```bash
-docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/jesseduffield/lazydocker:/.config/jesseduffield/lazydocker jesseduffield/lazydocker
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/jesseduffield/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker
 ```
 ## 4. Running the Example
 Follow these steps to launch the demo environment and monitor it with Lazydocker:  
@@ -35,7 +35,7 @@ docker-compose up -d
 ``` 
 3. Launch the Lazydocker interface:
 ```bash
-lazydocker
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/jesseduffield/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker
 ```
 ## 5. Expected Output
 Once executed, you should see an interactive terminal interface with the following sections:
